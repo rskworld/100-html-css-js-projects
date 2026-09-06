@@ -61,7 +61,7 @@ Learn web development by building real-world projects step by step.
 
 ### 🟢 Beginner
 
-1. Calculator
+1. Calculator(./Calculator)
 2. Todo App
 3. Digital Clock
 4. Stopwatch
