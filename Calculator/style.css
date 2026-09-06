@@ -1,0 +1,172 @@
+/* 
+ * Developer: Molla Samser
+ * Organization: RSK World
+ * Website: https://rskworld.in
+ * YouTube Channel: http://www.youtube.com/@rskworldin?sub_confirmation=1
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #3a3a4c 0%, #1e1e24 100%);
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#myDIV {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 12px;
+  width: 100%;
+  max-width: 340px;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #000;
+  border-radius: 40px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6), inset 0 2px 5px rgba(255,255,255,0.2), 0 0 0 8px #1a1a1a;
+}
+
+/* Screen */
+.Screen {
+  grid-column: 1 / span 20;
+  width: 100%;
+  height: 90px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background: transparent;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5px;
+}
+
+#History {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#Output {
+  font-size: 64px;
+  font-weight: 300;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* Base button styles */
+div.SmallButton, div.Button, div.ButtonRed, div.ButtonLarge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.15s ease;
+}
+
+div.SmallButton:active, div.Button:active, div.ButtonRed:active, div.ButtonLarge:active {
+  opacity: 0.5;
+}
+
+/* Row 1: Memory Buttons (5 items -> 4 cols each) */
+div.SmallButton {
+  grid-column: span 4;
+  height: auto;
+  aspect-ratio: auto;
+  padding: 12px 0;
+  border-radius: 12px;
+  background: #333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Standard Buttons (4 items per row -> 5 cols each) */
+div.Button, div.ButtonRed, div.ButtonLarge {
+  grid-column: span 5;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/* Specific Colors */
+/* Numbers */
+div.Button {
+  background: #333;
+  color: #fff;
+}
+
+/* Top row functions */
+#AC, #CE, #\% {
+  background: #a5a5a5;
+  color: #000;
+}
+
+/* Operators */
+#divide, #x, #minus, #plus, #equals {
+  background: #ff9f0a;
+  color: #fff;
+  font-size: 40px;
+}
+
+/* Make 0 a wide pill (10 cols) */
+#\30 {
+  grid-column: span 10;
+  aspect-ratio: auto; /* Remove 1/1 square constraint */
+  border-radius: 40px;
+  justify-content: flex-start;
+  padding-left: 28px; 
+}
+
+/* The Plus button should no longer span 2 rows. It acts as a standard operator now. */
+div.ButtonLarge {
+  grid-row: auto; /* Reset any spanning */
+}
+
+/* Links */
+.links-container {
+  grid-column: 1 / span 20;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.link-more {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.link-more:hover {
+  color: #fff;
+}
+.link-yt {
+  color: #ff0000;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+.link-yt:hover {
+  transform: scale(1.1);
+}
