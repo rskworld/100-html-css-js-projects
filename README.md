@@ -1,4 +1,4 @@
-# 🚀 100 HTML CSS JavaScript Projects
+﻿# 🚀 100 HTML CSS JavaScript Projects
 
 💻 Build • 🎯 Learn • 🚀 Grow
 
@@ -61,7 +61,7 @@ Learn web development by building real-world projects step by step.
 
 ### 🟢 Beginner
 
-1. Calculator(./Calculator)
+1. [Calculator](Calculator/)(./Calculator)
 2. Todo App
 3. Digital Clock
 4. Stopwatch
@@ -141,3 +141,4 @@ Build all 100 projects and become a **frontend developer** 🚀
 ---
 
 🔥 Follow rskworld for more coding projects
+
