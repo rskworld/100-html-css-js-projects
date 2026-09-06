@@ -127,7 +127,7 @@ Open any project folder and run `index.html`
 
 ---
 
-## 📢 Connect
+## 📢 Connect 
 
 * YouTube: http://www.youtube.com/@rskworldin?sub_confirmation=1
 * Website: https://rskworld.in
