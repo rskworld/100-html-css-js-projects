@@ -1,0 +1,66 @@
+<!--
+  Developer: Molla Samser
+  Organization: RSK World
+  YouTube: @rskworldin
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium JavaScript Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="clock">
+            <div class="clock-circles">
+                <div class="clock-circles__item"></div>
+                <div class="clock-circles__item"></div>
+                <div class="clock-circles__item"></div>
+                <div class="clock-circles__item">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+            <div class="clock-indicators">
+                <div class="clock-indicators__item"></div>
+                <div class="clock-indicators__item"></div>
+                <div class="clock-indicators__item"></div>
+                <div class="clock-indicators__item"></div>
+                <div class="clock-indicators__item"></div>
+                <div class="clock-indicators__item"></div>
+                <div class="clock-indicators__item"></div>
+                <div class="clock-indicators__item"></div>
+            </div>
+            <div class="clock-times">
+                <div class="clock-times__second" id="second-hand"></div>
+                <div class="clock-times__minute" id="minute-hand"></div>
+                <div class="clock-times__hour" id="hour-hand"></div>
+            </div>
+        </div>
+        
+        <div class="clock-features">
+            <div class="digital-time" id="digital-time">00:00:00</div>
+            <div class="date-display" id="date-display">Day, Month Date, Year</div>
+        </div>
+        
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">☀️</button>
+    </div>
+    
+    <div class="developer-info">
+        <p>Developed by Molla Samser (<a href="https://rskworld.in" target="_blank">RSK World</a>)</p>
+        <a href="https://www.youtube.com/@rskworldin?sub_confirmation=1" target="_blank" class="yt-link">Subscribe on YouTube</a>
+        <br>
+        <a href="https://github.com/rskworld/100-html-css-js-projects" target="_blank" class="github-link">View Project on GitHub</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
